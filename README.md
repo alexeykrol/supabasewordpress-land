@@ -5,7 +5,7 @@
 [![Vite](https://img.shields.io/badge/Vite-7.3.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4.1-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
-[![Security](https://img.shields.io/badge/Security-A+-success?style=for-the-badge&logo=security&logoColor=white)](tests/reports/security-audit-2025-12-29.md)
+![Security](https://img.shields.io/badge/Security-A+-success?style=for-the-badge&logo=security&logoColor=white)
 
 > **Transform WordPress into a flexible marketing platform with Supabase.** Automatic funnels, 1-click registration, and real-time analytics. No monthly fees. Open Source.
 
@@ -34,8 +34,6 @@ This landing page has undergone comprehensive security auditing:
 - ✅ **XSS protection** - No dangerous HTML rendering
 - ✅ **Tabnabbing prevention** - Secure external links
 - ✅ **GDPR compliant** - All resources self-hosted
-
-[View Full Security Audit Report →](tests/reports/security-audit-2025-12-29.md)
 
 ---
 
@@ -96,17 +94,49 @@ The app will be available at `http://localhost:5173`
 
 ```
 supabasewordpress-land/
-├── public/              # Static assets
-├── src/
-│   ├── App.tsx          # Main application component
-│   ├── main.tsx         # Application entry point
-│   └── index.css        # Global styles & Tailwind
-├── index.html           # HTML template
-├── package.json         # Dependencies and scripts
-├── tsconfig.json        # TypeScript configuration
-├── tailwind.config.js   # Tailwind CSS configuration
-└── vite.config.ts       # Vite configuration
+├── public/                      # Static assets (favicon, images, etc.)
+│   └── vite.svg                 # Vite logo for favicon
+│
+├── src/                         # Application source code
+│   ├── App.tsx                  # Main React component with all landing sections
+│   │                            # Contains: Navigation, Hero, Problem, Solution,
+│   │                            # SocialProof, Statistics, Manifesto, DualCTA, Footer
+│   ├── main.tsx                 # Application entry point - React DOM rendering
+│   ├── index.css                # Global styles, Tailwind directives, font imports
+│   └── vite-env.d.ts            # TypeScript declarations for Vite environment
+│
+├── index.html                   # Root HTML template with meta tags and CSP
+│
+├── package.json                 # Project metadata, dependencies, npm scripts
+├── package-lock.json            # Locked dependency versions for reproducibility
+│
+├── tsconfig.json                # Base TypeScript configuration
+├── tsconfig.app.json            # TypeScript config for application code
+├── tsconfig.node.json           # TypeScript config for Node.js (Vite config)
+│
+├── tailwind.config.js           # Tailwind CSS configuration and theme customization
+├── postcss.config.js            # PostCSS plugins configuration (Tailwind + Autoprefixer)
+│
+├── vite.config.ts               # Vite bundler configuration (React plugin, build settings)
+├── eslint.config.js             # ESLint rules for code quality and consistency
+│
+├── .gitignore                   # Files and folders to exclude from Git
+└── README.md                    # Project documentation (you are here!)
 ```
+
+### Key Files Explained
+
+| File | Purpose |
+|------|---------|
+| **src/App.tsx** | Single-file component architecture containing all landing page sections. Uses Framer Motion for animations, Lucide React for icons. Fully responsive with mobile menu. |
+| **src/main.tsx** | React 18 entry point with StrictMode enabled for development safety checks. Renders App component into root DOM element. |
+| **src/index.css** | Imports self-hosted Inter font (@fontsource), Tailwind CSS base/components/utilities layers, and defines global styles (smooth scrolling). |
+| **index.html** | HTML5 template with SEO meta tags, Content-Security-Policy header, Open Graph tags for social sharing, and root div for React mounting. |
+| **vite.config.ts** | Configures Vite dev server and production build. Includes React plugin with Fast Refresh for instant HMR during development. |
+| **tailwind.config.js** | Extends Tailwind with custom colors (emerald/teal gradients), responsive breakpoints, and content paths for JIT compilation. |
+| **tsconfig.json** | TypeScript compiler options with strict mode, ES2020 target, and module resolution settings for modern React development. |
+| **eslint.config.js** | Flat config format (ESLint 9+) with React hooks rules, TypeScript parser, and recommended presets for code quality. |
+| **.gitignore** | Excludes node_modules, build artifacts (dist/), environment files (.env), IDE configs, and internal test reports from version control. |
 
 ---
 
