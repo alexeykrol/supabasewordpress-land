@@ -661,6 +661,8 @@ function Footer() {
           <div className="flex items-center gap-8">
             <a
               href="#"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-700 hover:text-emerald-600 transition-colors flex items-center gap-2"
             >
               <Github className="w-5 h-5" />
@@ -668,6 +670,8 @@ function Footer() {
             </a>
             <a
               href="#"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-gray-700 hover:text-emerald-600 transition-colors flex items-center gap-2"
             >
               <BookOpen className="w-5 h-5" />
