@@ -21,3 +21,12 @@ dist-ssr
 *.sln
 *.sw?
 .env
+
+# Internal testing and reports
+tests/
+test-results/
+
+# Deployment configs (use when needed, but don't commit)
+netlify.toml
+vercel.json
+_headers
