@@ -30,6 +30,7 @@ function App() {
       <SocialProof />
       <Manifesto />
       <Statistics />
+      <DevelopmentStory />
       <DualCTA />
       <Footer />
     </div>
@@ -59,7 +60,7 @@ function Navigation() {
             <a href="#case-study" className="text-gray-700 hover:text-emerald-600 transition-colors">
               Case Study
             </a>
-            <a href="#roi" className="text-gray-700 hover:text-emerald-600 transition-colors">
+            <a href="#manifesto" className="text-gray-700 hover:text-emerald-600 transition-colors">
               Bigger Benefits
             </a>
           </div>
@@ -147,10 +148,11 @@ function Hero() {
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">
-                Stop Administering Your Online School.{' '}
+                Stop Administering Your WordPress Online School.
               </span>
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-teal-700 to-emerald-600">
-                Start Managing It.
+              <br />
+              <span className="text-red-600">
+                Start Make Money.
               </span>
             </h1>
             <p className="text-xl text-slate-700 mb-8 leading-relaxed">
@@ -174,7 +176,7 @@ function Hero() {
                 className="bg-white/80 backdrop-blur-sm border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-50/80 px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center gap-2 shadow-lg"
               >
                 <Sparkles className="w-5 h-5" />
-                How I Built This
+                Get more
               </motion.a>
             </div>
           </motion.div>
@@ -230,13 +232,13 @@ function Problem() {
       icon: Users,
       title: 'Registration Wall',
       description:
-        'Standard WP forms kill 50% of conversions. Users hate creating passwords and verifying emails.',
+        'Standard WP forms kill 50% of conversions. Users hate creating passwords and verifying emails. You lose users.',
     },
     {
       icon: BarChart3,
       title: 'Blind Analytics',
       description:
-        "You don't know which landing page brought the paying student. You can't optimize ROI.",
+        "You don't know which landing page brought the paying student. You can't optimize ROI. Your business is blind!",
     },
   ];
 
@@ -264,7 +266,7 @@ function Problem() {
               className="bg-white/90 backdrop-blur-sm border border-emerald-100/50 rounded-xl p-8 shadow-2xl hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] transition-all hover:bg-white flex flex-col justify-center min-h-[280px]"
             >
               <h3 className="text-2xl font-bold mb-4 text-gray-900 text-center">{problem.title}</h3>
-              <p className="text-slate-700 leading-relaxed text-center">{problem.description}</p>
+              <p className="text-xl text-slate-700 leading-relaxed text-center">{problem.description}</p>
             </motion.div>
           ))}
         </div>
@@ -279,21 +281,21 @@ function Solution() {
       icon: Zap,
       title: 'Auto-Pilot Funnels',
       description:
-        'Link Landing Page A → Course A. Link Landing Page B → VIP Program. Set it once, runs forever.',
+        'Link Landing Page A → Course A. Link Landing Page B → VIP Program. Set it once, runs forever. Now you can scale to thousands of landing pages, memberships, and courses. Your business scales automatically.',
       image: 'left',
     },
     {
       icon: Lock,
       title: 'Frictionless Entry',
       description:
-        'Google/Facebook Login or Magic Link. Conversion jumps from 4% to 9% instantly.',
+        'Google/Facebook Login or Magic Link. Conversion jumps from 4% to 9% instantly. You stop losing users. Users no longer feel frustrated and instantly access your site without effort. Maximum authentication security.',
       image: 'right',
     },
     {
       icon: BarChart3,
       title: 'Data Clarity',
       description:
-        'Real-time SQL analytics via Supabase. Know exactly where every dollar comes from.',
+        'Real-time SQL analytics via Supabase. Know exactly where every dollar comes from. You know which segments and campaigns perform best, which to scale and which to kill. Which landing pages convert your audience best. Advertising efficiency increases by 47%.',
       image: 'left',
     },
   ];
@@ -452,9 +454,9 @@ function SocialProof() {
         >
           <div className="absolute top-0 left-0 text-9xl text-emerald-100 font-serif">"</div>
           <blockquote className="relative bg-white/80 backdrop-blur-sm border-2 border-red-500 rounded-xl p-12 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.15),0_8px_10px_-6px_rgba(0,0,0,0.15)]">
-            <p className="text-2xl text-gray-700 leading-relaxed mb-8">
+            <p className="text-xl text-gray-700 leading-relaxed mb-8">
               I used to spend 3 hours a day manually managing access for my 5 courses. After building
-              Supabase Bridge, I set it up once and saved 90 hours in the first month. Conversion grew by
+              Supabase Bridge, I manage over 50 products and saved 90 hours in the first month. Conversion grew by
               125%.
             </p>
             <footer className="flex items-center gap-4">
@@ -483,7 +485,7 @@ function Statistics() {
           viewport={{ once: true }}
           className="bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-xl p-8 md:p-12 text-center shadow-xl mb-12"
         >
-          <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
+          <p className="text-xl text-gray-700 leading-relaxed">
             I acted as the <span className="text-emerald-600 font-semibold">Product Owner and QA</span>{' '}
             (60% of time). AI wrote the code (Security, Database, API). Result:{' '}
             <span className="text-emerald-600 font-semibold">
@@ -547,23 +549,171 @@ function Statistics() {
 
 function Manifesto() {
   return (
-    <section className="pt-20 pb-10 px-4 sm:px-6 lg:px-8">
+    <section id="manifesto" className="pt-20 pb-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
+          className="bg-white/90 backdrop-blur-sm border-2 border-emerald-200/50 rounded-2xl p-10 shadow-2xl"
         >
           <Sparkles className="w-16 h-16 text-emerald-600 mx-auto mb-8" />
           <p className="text-3xl md:text-4xl font-bold leading-relaxed mb-6 text-gray-900">
-            This plugin is free. I built it to solve my own problem.
+            I built it to solve my own problem.
           </p>
-          <p className="text-2xl md:text-3xl text-gray-700 leading-relaxed">
-            But it proves a bigger point:{' '}
-            <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-700 to-teal-600 font-semibold">
+          <div className="text-2xl md:text-3xl font-bold text-gray-700 leading-relaxed space-y-4">
+            <p>But it proves a bigger point:</p>
+            <p className="text-red-600 font-semibold">
               You don't need a dev team to build complex software anymore.
-            </span>{' '}
-            You need the right mindset.
+            </p>
+            <p>You need the right mindset.</p>
+          </div>
+        </motion.div>
+      </div>
+    </section>
+  );
+}
+
+function DevelopmentStory() {
+  return (
+    <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-emerald-50/50 to-teal-50/50">
+      <div className="max-w-7xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-16"
+        >
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">
+            How This Landing Page Was Built
+          </h2>
+          <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
+            This landing page was built in <span className="text-emerald-600 font-semibold">3 hours</span> by a single person with AI assistance (Claude), demonstrating the power of AI-assisted development.
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mb-12"
+        >
+          <h3 className="text-3xl font-bold text-center mb-8 text-gray-900">Cost Comparison</h3>
+          <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="bg-white/80 backdrop-blur-sm border border-red-200/50 rounded-xl p-8 shadow-xl">
+              <h4 className="text-2xl font-bold text-red-600 mb-4">Traditional Hiring</h4>
+              <div className="space-y-3 text-gray-700">
+                <p className="text-xl"><span className="font-semibold">Time:</span> 5-7 days</p>
+                <p className="text-xl"><span className="font-semibold">Cost:</span> $2,500 - $3,500</p>
+                <p className="text-xl"><span className="font-semibold">Team:</span> UI/UX Designer + Frontend Dev + QA</p>
+              </div>
+            </div>
+
+            <div className="bg-white/80 backdrop-blur-sm border border-orange-200/50 rounded-xl p-8 shadow-xl">
+              <h4 className="text-2xl font-bold text-orange-600 mb-4">Freelance</h4>
+              <div className="space-y-3 text-gray-700">
+                <p className="text-xl"><span className="font-semibold">Time:</span> 3-5 days</p>
+                <p className="text-xl"><span className="font-semibold">Cost:</span> $1,500 - $2,500</p>
+                <p className="text-xl"><span className="font-semibold">Team:</span> 1 Full-stack Developer</p>
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-emerald-50/90 to-teal-50/90 backdrop-blur-sm border-2 border-emerald-200/50 rounded-xl p-8 shadow-2xl">
+              <h4 className="text-2xl font-bold text-emerald-600 mb-4">AI-Assisted</h4>
+              <div className="space-y-3 text-gray-700">
+                <p className="text-xl"><span className="font-semibold">Time:</span> 3 hours</p>
+                <p className="text-xl"><span className="font-semibold">Cost:</span> ~$10</p>
+                <p className="text-xl"><span className="font-semibold">Team:</span> 1 Product Owner + Claude</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-xl p-6 text-center">
+            <p className="text-2xl md:text-3xl font-bold text-emerald-600">
+              Savings: 99.6% cost reduction, 40x faster delivery
+            </p>
+          </div>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
+          <motion.div
+            initial={{ opacity: 0, x: -20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-white/80 backdrop-blur-sm border border-emerald-100/50 rounded-xl p-8 shadow-xl"
+          >
+            <h4 className="text-2xl font-bold text-emerald-600 mb-6 flex items-center gap-2">
+              <CheckCircle2 className="w-8 h-8" />
+              What AI did:
+            </h4>
+            <ul className="space-y-3 text-xl text-gray-700">
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                <span>Generated complete React/TypeScript codebase</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                <span>Implemented responsive design with Tailwind CSS</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                <span>Created smooth animations with Framer Motion</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                <span>Performed comprehensive security audit</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                <span>Fixed all vulnerabilities and optimized performance</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
+                <span>Generated professional documentation</span>
+              </li>
+            </ul>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, x: 20 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="bg-white/80 backdrop-blur-sm border border-emerald-100/50 rounded-xl p-8 shadow-xl"
+          >
+            <h4 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+              <Users className="w-8 h-8 text-gray-700" />
+              What the human did:
+            </h4>
+            <ul className="space-y-3 text-xl text-gray-700">
+              <li className="flex items-start gap-3">
+                <span className="text-2xl flex-shrink-0">🎯</span>
+                <span>Defined requirements and user experience</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-2xl flex-shrink-0">🎨</span>
+                <span>Approved design decisions</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-2xl flex-shrink-0">🔍</span>
+                <span>Reviewed and validated output</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-2xl flex-shrink-0">✅</span>
+                <span>Tested final result</span>
+              </li>
+            </ul>
+          </motion.div>
+        </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-white/90 backdrop-blur-sm border-2 border-emerald-200/50 rounded-2xl p-10 text-center shadow-2xl"
+        >
+          <p className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed">
+            This proves you don't need a development team or expensive freelancers to build professional web projects anymore.{' '}
+            <span className="text-emerald-600">You need the right mindset and AI tools.</span>
           </p>
         </motion.div>
       </div>
@@ -585,7 +735,7 @@ function DualCTA() {
             <Download className="w-12 h-12 text-gray-700 mb-6" />
             <h3 className="text-3xl font-bold mb-4 text-gray-900">Just Need the Tool?</h3>
             <h4 className="text-2xl font-semibold text-emerald-600 mb-6">Get Supabase Bridge</h4>
-            <p className="text-gray-700 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
               Free, Open Source (MIT License). Perfect for school owners who want to fix their funnels today.
             </p>
             <motion.button
@@ -611,7 +761,7 @@ function DualCTA() {
             <h4 className="text-2xl font-semibold text-emerald-600 mb-6">
               Course: AI-Assisted Development
             </h4>
-            <p className="text-gray-700 mb-8 leading-relaxed">
+            <p className="text-xl text-gray-700 mb-8 leading-relaxed">
               Learn how I built this from scratch in 15 days without writing code manually. Stop depending on
               SaaS limits. Build your own assets.
             </p>
