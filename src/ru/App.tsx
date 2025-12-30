@@ -17,6 +17,7 @@ import {
   Activity,
   Menu,
   X,
+  Globe,
 } from 'lucide-react';
 import { useState } from 'react';
 
@@ -39,6 +40,11 @@ function App() {
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
+
+  const switchLanguage = (lang: 'en' | 'ru') => {
+    localStorage.setItem('language', lang);
+    window.location.reload();
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-lg border-b border-emerald-100/50 shadow-sm">
@@ -66,6 +72,21 @@ function Navigation() {
           </div>
 
           <div className="flex items-center gap-4">
+            <div className="hidden md:flex items-center gap-2 bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-lg p-1">
+              <button
+                onClick={() => switchLanguage('en')}
+                className="px-3 py-1 rounded text-gray-700 hover:bg-white/80 font-medium text-sm transition-all"
+              >
+                EN
+              </button>
+              <button
+                onClick={() => switchLanguage('ru')}
+                className="px-3 py-1 rounded bg-emerald-600 text-white font-medium text-sm transition-all"
+              >
+                RU
+              </button>
+            </div>
+
             <motion.a
               href="#download"
               initial={{ opacity: 0, x: 20 }}
@@ -94,6 +115,20 @@ function Navigation() {
           className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-xl border-t border-gray-100"
         >
           <div className="px-4 py-4 space-y-3">
+            <div className="flex items-center gap-2 bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-lg p-1 mb-3">
+              <button
+                onClick={() => switchLanguage('en')}
+                className="flex-1 px-3 py-2 rounded text-gray-700 hover:bg-white/80 font-medium text-sm transition-all"
+              >
+                EN
+              </button>
+              <button
+                onClick={() => switchLanguage('ru')}
+                className="flex-1 px-3 py-2 rounded bg-emerald-600 text-white font-medium text-sm transition-all"
+              >
+                RU
+              </button>
+            </div>
             <a
               href="#features"
               onClick={() => setIsOpen(false)}
