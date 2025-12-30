@@ -373,10 +373,12 @@ function Solution() {
               }`}
             >
               <div className={index % 2 === 1 ? 'md:order-2' : ''}>
-                <div className="bg-emerald-50/80 backdrop-blur-sm w-16 h-16 rounded-xl flex items-center justify-center mb-6 border border-emerald-200/50">
-                  <solution.icon className="w-8 h-8 text-emerald-600" />
+                <div className="flex items-center gap-4 mb-6">
+                  <div className="bg-emerald-50/80 backdrop-blur-sm w-16 h-16 rounded-xl flex items-center justify-center border border-emerald-200/50 flex-shrink-0">
+                    <solution.icon className="w-8 h-8 text-emerald-600" />
+                  </div>
+                  <h3 className="text-3xl font-bold text-gray-900">{solution.title}</h3>
                 </div>
-                <h3 className="text-3xl font-bold mb-4 text-gray-900">{solution.title}</h3>
                 <p className="text-xl text-slate-700 leading-relaxed">{solution.description}</p>
               </div>
               <div className={index % 2 === 1 ? 'md:order-1' : ''}>
