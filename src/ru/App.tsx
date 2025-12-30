@@ -291,7 +291,7 @@ function Problem() {
         >
           <h2 className="text-4xl md:text-5xl mb-4">
             <span className="block font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">
-              Проблема WordPress из коробки.
+              Проблема WordPress из коробки:
             </span>
             <span className="block font-bold text-red-600">
               Никакого внятного маркетинга.
@@ -357,10 +357,13 @@ function Solution() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">
-            Решение: Supabase WordPress Bridge
-            <br />
-            Вы получаете...
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+            <span className="block bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">
+              Решение: Supabase WordPress Bridge
+            </span>
+            <span className="block text-red-600">
+              Вы получаете...
+            </span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 mx-auto"></div>
         </motion.div>
