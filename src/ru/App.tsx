@@ -779,7 +779,7 @@ function DevelopmentStory() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="mt-6"
+          className="mt-10"
         >
           <p className="text-3xl md:text-4xl font-bold text-emerald-600 text-center">
             Сделай правильный выбор
@@ -792,7 +792,7 @@ function DevelopmentStory() {
 
 function DualCTA() {
   return (
-    <section id="download" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="download" className="pt-10 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-2 gap-8">
           <motion.div
