@@ -190,7 +190,7 @@ function Hero() {
                 Хватит тратить время на борьбу с WordPress в вашей Онлайн школе.
               </span>
               <span className="block text-5xl md:text-6xl text-red-600">
-                Начните зарабатывать.
+                Начните, наконец, привлекать клиентов и поднимите конверсию.
               </span>
             </h1>
             <p className="text-xl text-slate-700 mb-8 leading-relaxed">
