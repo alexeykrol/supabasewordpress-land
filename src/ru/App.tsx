@@ -805,7 +805,7 @@ function DualCTA() {
             <h3 className="text-3xl font-bold mb-4 text-gray-900">Нужен только инструмент?</h3>
             <h4 className="text-2xl font-semibold text-emerald-600 mb-6">Получите Supabase Bridge</h4>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Бесплатно, Open Source (MIT License). Идеально для владельцев школ, которые хотят исправить свои воронки уже сегодня.
+              Идеально для владельцев школ, которые хотят исправить свои воронки уже сегодня и начать зарабатывать, а не мучаться с WordPress. Бесплатно, Open Source (MIT License).
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -828,11 +828,11 @@ function DualCTA() {
             <Sparkles className="w-12 h-12 text-emerald-600 mb-6" />
             <h3 className="text-3xl font-bold mb-4 text-gray-900">Хотите получить суперсилу?</h3>
             <h4 className="text-2xl font-semibold text-emerald-600 mb-6">
-              Курс: AI-ассистированная разработка
+              Курс: Создание ИИ агентов
             </h4>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Узнайте, как я создал это с нуля за 15 дней, не написав код вручную. Перестаньте зависеть от
-              ограничений SaaS. Создавайте свои собственные активы.
+              Научитесь создавать автоматизации, полноценные приложения и мощных ИИ агентов. Перестаньте зависеть от
+              ограничений убогих конструкторов.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
