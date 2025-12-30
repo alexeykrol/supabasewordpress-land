@@ -189,7 +189,7 @@ function Hero() {
               <span className="block text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">
                 Хватит тратить время на борьбу с WordPress в вашей Онлайн школе.
               </span>
-              <span className="block text-5xl md:text-6xl text-red-600">
+              <span className="block text-4xl md:text-5xl text-red-600">
                 Начните, наконец, привлекать клиентов и поднимите конверсию.
               </span>
             </h1>
