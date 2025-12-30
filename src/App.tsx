@@ -28,8 +28,8 @@ function App() {
       <Problem />
       <Solution />
       <SocialProof />
-      <Statistics />
       <Manifesto />
+      <Statistics />
       <DualCTA />
       <Footer />
     </div>
@@ -49,7 +49,7 @@ function Navigation() {
             className="flex items-center gap-2"
           >
             <Database className="w-8 h-8 text-emerald-600" />
-            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">Supabase Bridge</span>
+            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">Supabase WordPress Bridge</span>
           </motion.div>
 
           <div className="hidden md:flex items-center gap-8">
@@ -60,10 +60,7 @@ function Navigation() {
               Case Study
             </a>
             <a href="#roi" className="text-gray-700 hover:text-emerald-600 transition-colors">
-              The ROI
-            </a>
-            <a href="#master" className="text-gray-700 hover:text-emerald-600 transition-colors">
-              Master the Skill
+              Bigger Benefits
             </a>
           </div>
 
@@ -72,9 +69,9 @@ function Navigation() {
               href="#download"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="hidden md:block bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-lg"
+              className="hidden md:block bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-lg whitespace-nowrap"
             >
-              Get Plugin
+              Download for Free
             </motion.a>
 
             <button
@@ -189,10 +186,6 @@ function Hero() {
             className="relative"
           >
             <div className="bg-white/80 backdrop-blur-sm border border-emerald-100/50 rounded-2xl p-8 shadow-2xl">
-              <div className="flex items-center justify-between mb-6">
-                <h3 className="text-lg font-semibold text-gray-700">Dashboard</h3>
-                <Activity className="w-5 h-5 text-emerald-600" />
-              </div>
               <div className="space-y-6">
                 <div className="bg-emerald-50/80 backdrop-blur-sm rounded-lg p-6 border border-emerald-200/50">
                   <div className="flex items-center justify-between mb-2">
@@ -482,8 +475,23 @@ function SocialProof() {
 
 function Statistics() {
   return (
-    <section id="roi" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="roi" className="pt-10 pb-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-xl p-8 md:p-12 text-center shadow-xl mb-12"
+        >
+          <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
+            I acted as the <span className="text-emerald-600 font-semibold">Product Owner and QA</span>{' '}
+            (60% of time). AI wrote the code (Security, Database, API). Result:{' '}
+            <span className="text-emerald-600 font-semibold">
+              Enterprise quality for the price of coffee.
+            </span>
+          </p>
+        </motion.div>
+
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -532,22 +540,6 @@ function Statistics() {
 
           <div className="h-2 bg-emerald-100 rounded-full w-full mt-12"></div>
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.5 }}
-          className="bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-xl p-8 md:p-12 text-center shadow-xl"
-        >
-          <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-            I acted as the <span className="text-emerald-600 font-semibold">Product Owner and QA</span>{' '}
-            (60% of time). AI wrote the code (Security, Database, API). Result:{' '}
-            <span className="text-emerald-600 font-semibold">
-              Enterprise quality for the price of coffee.
-            </span>
-          </p>
-        </motion.div>
       </div>
     </section>
   );
@@ -555,7 +547,7 @@ function Statistics() {
 
 function Manifesto() {
   return (
-    <section className="py-20 px-4 sm:px-6 lg:px-8">
+    <section className="pt-20 pb-10 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -655,7 +647,7 @@ function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-8">
           <div className="flex items-center gap-2">
             <Database className="w-8 h-8 text-emerald-600" />
-            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">Supabase Bridge</span>
+            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">Supabase WordPress Bridge</span>
           </div>
 
           <div className="flex items-center gap-8">
