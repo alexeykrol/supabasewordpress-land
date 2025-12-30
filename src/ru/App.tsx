@@ -289,7 +289,11 @@ function Problem() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">Проблема WordPress из коробки: Никакого внятного маркетинга. Это блог, а не машина продаж.</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">
+            Проблема WordPress из коробки.
+            <br />
+            Никакого внятного маркетинга. Это блог, а не машина продаж.
+          </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 mx-auto"></div>
         </motion.div>
 
