@@ -626,18 +626,6 @@ function Manifesto() {
             <p>Вам нужно научиться использовать ИИ.</p>
           </div>
         </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.2 }}
-          className="mt-12 bg-gradient-to-r from-emerald-600 to-teal-600 backdrop-blur-sm border-2 border-emerald-400/50 rounded-2xl p-10 shadow-2xl"
-        >
-          <p className="text-3xl md:text-4xl font-bold text-white text-center">
-            Сделай правильный выбор
-          </p>
-        </motion.div>
       </div>
     </section>
   );
@@ -783,6 +771,18 @@ function DevelopmentStory() {
           <p className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed">
             Это доказывает, что вам больше не нужна команда разработчиков или дорогие фрилансеры для создания профессиональных веб-проектов.{' '}
             <span className="text-emerald-600">Вам нужен правильный подход и ИИ-инструменты.</span>
+          </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="mt-12 bg-gradient-to-r from-emerald-600 to-teal-600 backdrop-blur-sm border-2 border-emerald-400/50 rounded-2xl p-10 shadow-2xl"
+        >
+          <p className="text-3xl md:text-4xl font-bold text-white text-center">
+            Сделай правильный выбор
           </p>
         </motion.div>
       </div>
