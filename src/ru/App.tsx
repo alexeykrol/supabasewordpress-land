@@ -293,10 +293,10 @@ function Problem() {
             <span className="block font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">
               Проблема WordPress из коробки.
             </span>
-            <span className="block font-normal text-red-600">
+            <span className="block font-bold text-red-600">
               Никакого внятного маркетинга.
             </span>
-            <span className="block font-normal text-red-600">
+            <span className="block font-bold text-red-600">
               Это блог, а не машина продаж.
             </span>
           </h2>
