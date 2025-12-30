@@ -813,7 +813,7 @@ function DualCTA() {
               className="w-full bg-white/80 backdrop-blur-sm hover:bg-emerald-50/80 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center justify-center gap-2 border-2 border-emerald-300 shadow-lg"
             >
               <Download className="w-5 h-5" />
-              Скачать плагин
+              Скачать бесплатно
             </motion.button>
           </motion.div>
 
