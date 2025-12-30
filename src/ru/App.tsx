@@ -521,8 +521,8 @@ function SocialProof() {
                 <Users className="w-8 h-8 text-emerald-600" />
               </div>
               <div>
-                <div className="font-bold text-lg text-gray-900">Алексей К.</div>
-                <div className="text-gray-600">Основатель AI-Dev School</div>
+                <div className="font-bold text-lg text-gray-900">Алексей Крол</div>
+                <div className="text-gray-600">Автор Теории Каст и Ролей. Автор курса "Создание ИИ агентов с 0 для не-программистов"</div>
               </div>
             </footer>
           </blockquote>
@@ -543,8 +543,8 @@ function Statistics() {
           className="bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-xl p-8 md:p-12 text-center shadow-xl mb-12"
         >
           <p className="text-xl text-gray-700 leading-relaxed">
-            Я выступал в роли <span className="text-emerald-600 font-semibold">Product Owner и QA</span>{' '}
-            (60% времени). AI писал код (безопасность, база данных, API). Результат:{' '}
+            Я лишь <span className="text-emerald-600 font-semibold">говорил, что мне нужно и тестировал</span>{' '}
+            (60% времени), а ИИ писал код (безопасность, база данных, API). Результат:{' '}
             <span className="text-emerald-600 font-semibold">
               Корпоративное качество по цене кофе.
             </span>
@@ -557,10 +557,10 @@ function Statistics() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">Проверка реальностью разработки</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">Сравните стоимость и время разработки</h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Вы могли подумать, что это корпоративное решение стоило $50k и его разрабатывала команда 3 месяца.{' '}
-            <span className="text-emerald-600 font-semibold">Вы ошибаетесь.</span>
+            Вы могли подумать, что создание этого плагина с корпоративным уровнем безопасности стоило $50k+, и его разрабатывала команда 3 месяца.{' '}
+            <span className="text-emerald-600 font-semibold">Вы ошибаетесь. На графике цена/время обычной команды и ресурсы, которые потратил я.</span>
           </p>
         </motion.div>
 
@@ -616,15 +616,27 @@ function Manifesto() {
         >
           <Sparkles className="w-16 h-16 text-emerald-600 mx-auto mb-8" />
           <p className="text-3xl md:text-4xl font-bold leading-relaxed mb-6 text-gray-900">
-            Я создал это, чтобы решить свою проблему.
+            Я создал этот плагин, чтобы решить проблемы, которые не давали покоя годы.
           </p>
           <div className="text-2xl md:text-3xl font-bold text-gray-700 leading-relaxed space-y-4">
-            <p>Но это доказывает более важную мысль:</p>
+            <p>.. что доказывает более важную мысль:</p>
             <p className="text-red-600 font-semibold">
-              Вам больше не нужна команда разработчиков, чтобы создавать сложное ПО.
+              Вам больше не нужна команда разработчиков, чтобы создавать сложные приложения, модфицировать сайт на WordPress.
             </p>
-            <p>Вам нужен правильный подход.</p>
+            <p>Вам нужно научиться использовать ИИ.</p>
           </div>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+          className="mt-12 bg-gradient-to-r from-emerald-600 to-teal-600 backdrop-blur-sm border-2 border-emerald-400/50 rounded-2xl p-10 shadow-2xl"
+        >
+          <p className="text-3xl md:text-4xl font-bold text-white text-center">
+            Сделай правильный выбор
+          </p>
         </motion.div>
       </div>
     </section>
@@ -642,10 +654,10 @@ function DevelopmentStory() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">
-            Как создавался этот лендинг
+            И, кстати! Как создавался этот лендинг?
           </h2>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            Этот лендинг был создан за <span className="text-emerald-600 font-semibold">3 часа</span> одним человеком с помощью AI (Claude), демонстрируя возможности AI-ассистированной разработки.
+            Этот лендинг также был создан за <span className="text-emerald-600 font-semibold">3 часа</span> мной с помощью ИИ (Claude Code), демонстрируя возможности вайб кодинга.
           </p>
         </motion.div>
 
@@ -655,7 +667,7 @@ function DevelopmentStory() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h3 className="text-3xl font-bold text-center mb-8 text-gray-900">Сравнение стоимости</h3>
+          <h3 className="text-3xl font-bold text-center mb-8 text-gray-900">Сравнение стоимости создания двуязычного лендинга</h3>
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="bg-white/80 backdrop-blur-sm border border-red-200/50 rounded-xl p-8 shadow-xl">
               <h4 className="text-2xl font-bold text-red-600 mb-4">Найм команды</h4>
@@ -701,7 +713,7 @@ function DevelopmentStory() {
           >
             <h4 className="text-2xl font-bold text-emerald-600 mb-6 flex items-center gap-2">
               <CheckCircle2 className="w-8 h-8" />
-              Что сделал AI:
+              Что сделал ИИ:
             </h4>
             <ul className="space-y-3 text-xl text-gray-700">
               <li className="flex items-start gap-3">
@@ -739,7 +751,7 @@ function DevelopmentStory() {
           >
             <h4 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
               <Users className="w-8 h-8 text-gray-700" />
-              Что сделал человек:
+              Что сделал человек (Я):
             </h4>
             <ul className="space-y-3 text-xl text-gray-700">
               <li className="flex items-start gap-3">
@@ -770,7 +782,7 @@ function DevelopmentStory() {
         >
           <p className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed">
             Это доказывает, что вам больше не нужна команда разработчиков или дорогие фрилансеры для создания профессиональных веб-проектов.{' '}
-            <span className="text-emerald-600">Вам нужен правильный подход и AI-инструменты.</span>
+            <span className="text-emerald-600">Вам нужен правильный подход и ИИ-инструменты.</span>
           </p>
         </motion.div>
       </div>
