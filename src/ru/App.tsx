@@ -779,9 +779,9 @@ function DevelopmentStory() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="mt-12 bg-gradient-to-r from-emerald-600 to-teal-600 backdrop-blur-sm border-2 border-emerald-400/50 rounded-2xl p-10 shadow-2xl"
+          className="mt-6"
         >
-          <p className="text-3xl md:text-4xl font-bold text-white text-center">
+          <p className="text-3xl md:text-4xl font-bold text-emerald-600 text-center">
             Сделай правильный выбор
           </p>
         </motion.div>
