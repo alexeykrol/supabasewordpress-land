@@ -187,7 +187,7 @@ function Hero() {
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">
-                Хватит администрировать вашу онлайн-школу на WordPress.
+                Хватит тратить время на борьбу с WordPress в вашей Онлайн школе.
               </span>
               <br />
               <span className="text-red-600">
