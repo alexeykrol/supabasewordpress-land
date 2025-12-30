@@ -185,12 +185,11 @@ function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-              <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">
+            <h1 className="font-bold mb-6 leading-tight">
+              <span className="block text-4xl md:text-5xl bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">
                 Хватит тратить время на борьбу с WordPress в вашей Онлайн школе.
               </span>
-              <br />
-              <span className="text-red-600">
+              <span className="block text-5xl md:text-6xl text-red-600">
                 Начните зарабатывать.
               </span>
             </h1>
