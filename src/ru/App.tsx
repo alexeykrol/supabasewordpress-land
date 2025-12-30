@@ -262,7 +262,7 @@ function Problem() {
   const problems = [
     {
       icon: AlertTriangle,
-      title: 'Ужасный маркетинг',
+      title: 'Ужасный лидген',
       description:
         "WordPress не связывает лендинги с конкретными курсами автоматически. Вы тратите часы на ручную выдачу доступов.",
     },
