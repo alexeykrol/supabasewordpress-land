@@ -72,17 +72,17 @@ function Navigation() {
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="hidden md:flex items-center gap-2 bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-lg p-1">
+            <div className="hidden md:flex items-center gap-2 bg-gray-50/80 backdrop-blur-sm border border-gray-200/50 rounded-lg p-1">
               <button
                 onClick={() => switchLanguage('en')}
-                className="px-3 py-1.5 rounded bg-emerald-600 text-white font-medium text-lg transition-all"
+                className="px-3 py-1.5 rounded bg-emerald-100 border-2 border-emerald-500 font-medium text-2xl transition-all"
                 aria-label="Switch to English"
               >
                 🇺🇸
               </button>
               <button
                 onClick={() => switchLanguage('ru')}
-                className="px-3 py-1.5 rounded text-gray-700 hover:bg-white/80 font-medium text-lg transition-all"
+                className="px-3 py-1.5 rounded hover:bg-gray-100 font-medium text-2xl transition-all"
                 aria-label="Switch to Russian"
               >
                 🇷🇺
@@ -117,17 +117,17 @@ function Navigation() {
           className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-xl border-t border-gray-100"
         >
           <div className="px-4 py-4 space-y-3">
-            <div className="flex items-center gap-2 bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-lg p-1 mb-3">
+            <div className="flex items-center gap-2 bg-gray-50/80 backdrop-blur-sm border border-gray-200/50 rounded-lg p-1 mb-3">
               <button
                 onClick={() => switchLanguage('en')}
-                className="flex-1 px-3 py-2 rounded bg-emerald-600 text-white font-medium text-xl transition-all"
+                className="flex-1 px-3 py-2.5 rounded bg-emerald-100 border-2 border-emerald-500 font-medium text-3xl transition-all"
                 aria-label="Switch to English"
               >
                 🇺🇸
               </button>
               <button
                 onClick={() => switchLanguage('ru')}
-                className="flex-1 px-3 py-2 rounded text-gray-700 hover:bg-white/80 font-medium text-xl transition-all"
+                className="flex-1 px-3 py-2.5 rounded hover:bg-gray-100 font-medium text-3xl transition-all"
                 aria-label="Switch to Russian"
               >
                 🇷🇺

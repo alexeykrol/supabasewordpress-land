@@ -61,29 +61,29 @@ function Navigation() {
 
           <div className="hidden md:flex items-center gap-8">
             <a href="#features" className="text-gray-700 hover:text-emerald-600 transition-colors">
-              Features
+              Возможности
             </a>
             <a href="#case-study" className="text-gray-700 hover:text-emerald-600 transition-colors">
-              Case Study
+              Кейс
             </a>
             <a href="#manifesto" className="text-gray-700 hover:text-emerald-600 transition-colors">
-              Bigger Benefits
+              Больше выгод
             </a>
           </div>
 
           <div className="flex items-center gap-4">
-            <div className="hidden md:flex items-center gap-2 bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-lg p-1">
+            <div className="hidden md:flex items-center gap-2 bg-gray-50/80 backdrop-blur-sm border border-gray-200/50 rounded-lg p-1">
               <button
                 onClick={() => switchLanguage('en')}
-                className="px-3 py-1.5 rounded text-gray-700 hover:bg-white/80 font-medium text-lg transition-all"
-                aria-label="Switch to English"
+                className="px-3 py-1.5 rounded hover:bg-gray-100 font-medium text-2xl transition-all"
+                aria-label="Переключить на английский"
               >
                 🇺🇸
               </button>
               <button
                 onClick={() => switchLanguage('ru')}
-                className="px-3 py-1.5 rounded bg-emerald-600 text-white font-medium text-lg transition-all"
-                aria-label="Switch to Russian"
+                className="px-3 py-1.5 rounded bg-emerald-100 border-2 border-emerald-500 font-medium text-2xl transition-all"
+                aria-label="Переключить на русский"
               >
                 🇷🇺
               </button>
@@ -95,7 +95,7 @@ function Navigation() {
               animate={{ opacity: 1, x: 0 }}
               className="hidden md:block bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-lg whitespace-nowrap"
             >
-              Download for Free
+              Скачать бесплатно
             </motion.a>
 
             <button
@@ -117,17 +117,17 @@ function Navigation() {
           className="md:hidden absolute top-16 left-0 right-0 bg-white shadow-xl border-t border-gray-100"
         >
           <div className="px-4 py-4 space-y-3">
-            <div className="flex items-center gap-2 bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-lg p-1 mb-3">
+            <div className="flex items-center gap-2 bg-gray-50/80 backdrop-blur-sm border border-gray-200/50 rounded-lg p-1 mb-3">
               <button
                 onClick={() => switchLanguage('en')}
-                className="flex-1 px-3 py-2 rounded text-gray-700 hover:bg-white/80 font-medium text-xl transition-all"
+                className="flex-1 px-3 py-2.5 rounded hover:bg-gray-100 font-medium text-3xl transition-all"
                 aria-label="Switch to English"
               >
                 🇺🇸
               </button>
               <button
                 onClick={() => switchLanguage('ru')}
-                className="flex-1 px-3 py-2 rounded bg-emerald-600 text-white font-medium text-xl transition-all"
+                className="flex-1 px-3 py-2.5 rounded bg-emerald-100 border-2 border-emerald-500 font-medium text-3xl transition-all"
                 aria-label="Switch to Russian"
               >
                 🇷🇺
@@ -138,35 +138,35 @@ function Navigation() {
               onClick={() => setIsOpen(false)}
               className="block text-gray-600 hover:text-emerald-600 hover:bg-emerald-50 px-4 py-3 rounded-lg transition-colors"
             >
-              Features
+              Возможности
             </a>
             <a
               href="#case-study"
               onClick={() => setIsOpen(false)}
               className="block text-gray-600 hover:text-emerald-600 hover:bg-emerald-50 px-4 py-3 rounded-lg transition-colors"
             >
-              Case Study
+              Кейс
             </a>
             <a
               href="#roi"
               onClick={() => setIsOpen(false)}
               className="block text-gray-600 hover:text-emerald-600 hover:bg-emerald-50 px-4 py-3 rounded-lg transition-colors"
             >
-              The ROI
+              ROI
             </a>
             <a
               href="#master"
               onClick={() => setIsOpen(false)}
               className="block text-gray-600 hover:text-emerald-600 hover:bg-emerald-50 px-4 py-3 rounded-lg transition-colors"
             >
-              Master the Skill
+              Обучение
             </a>
             <a
               href="#download"
               onClick={() => setIsOpen(false)}
               className="block bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-6 py-3 rounded-lg font-medium transition-all shadow-lg text-center"
             >
-              Get Plugin
+              Скачать плагин
             </a>
           </div>
         </motion.div>
@@ -187,16 +187,16 @@ function Hero() {
           >
             <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
               <span className="bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">
-                Stop Administering Your WordPress Online School.
+                Хватит администрировать вашу онлайн-школу на WordPress.
               </span>
               <br />
               <span className="text-red-600">
-                Start Make Money.
+                Начните зарабатывать.
               </span>
             </h1>
             <p className="text-xl text-slate-700 mb-8 leading-relaxed">
-              Transform WordPress into a flexible marketing platform with Supabase. Automatic funnels,
-              1-click registration, and real-time analytics. No monthly fees. Open Source.
+              Превратите WordPress в гибкую маркетинговую платформу с помощью Supabase. Автоматические воронки,
+              регистрация в 1 клик и аналитика в реальном времени. Без ежемесячной платы. Open Source.
             </p>
             <div className="flex flex-wrap gap-4">
               <motion.a
@@ -206,7 +206,7 @@ function Hero() {
                 className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center gap-2 shadow-lg"
               >
                 <Download className="w-5 h-5" />
-                Download for Free
+                Скачать бесплатно
               </motion.a>
               <motion.a
                 href="#master"
@@ -215,7 +215,7 @@ function Hero() {
                 className="bg-white/80 backdrop-blur-sm border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-50/80 px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center gap-2 shadow-lg"
               >
                 <Sparkles className="w-5 h-5" />
-                Get more
+                Узнать больше
               </motion.a>
             </div>
           </motion.div>
@@ -230,24 +230,24 @@ function Hero() {
               <div className="space-y-6">
                 <div className="bg-emerald-50/80 backdrop-blur-sm rounded-lg p-6 border border-emerald-200/50">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-gray-700">Active Students</span>
+                    <span className="text-gray-700">Активных студентов</span>
                     <TrendingUp className="w-5 h-5 text-emerald-600" />
                   </div>
                   <div className="text-4xl font-bold text-emerald-600">+150</div>
                 </div>
                 <div className="bg-emerald-50/80 backdrop-blur-sm rounded-lg p-6 border border-emerald-200/50">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-gray-700">Conversion Rate</span>
+                    <span className="text-gray-700">Конверсия</span>
                     <BarChart3 className="w-5 h-5 text-emerald-600" />
                   </div>
                   <div className="text-4xl font-bold text-emerald-600">+125%</div>
                 </div>
                 <div className="bg-teal-50/80 backdrop-blur-sm rounded-lg p-6 border border-teal-200/50">
                   <div className="flex items-center justify-between mb-2">
-                    <span className="text-gray-700">Funnel Status</span>
+                    <span className="text-gray-700">Статус воронки</span>
                     <CheckCircle2 className="w-5 h-5 text-emerald-600" />
                   </div>
-                  <div className="text-2xl font-semibold text-emerald-600">Active</div>
+                  <div className="text-2xl font-semibold text-emerald-600">Активна</div>
                 </div>
               </div>
             </div>
@@ -263,21 +263,21 @@ function Problem() {
   const problems = [
     {
       icon: AlertTriangle,
-      title: 'Funnel Chaos',
+      title: 'Хаос в воронках',
       description:
-        "WordPress doesn't link landing pages to specific courses automatically. You waste hours manually granting access.",
+        "WordPress не связывает лендинги с конкретными курсами автоматически. Вы тратите часы на ручную выдачу доступов.",
     },
     {
       icon: Users,
-      title: 'Registration Wall',
+      title: 'Стена регистрации',
       description:
-        'Standard WP forms kill 50% of conversions. Users hate creating passwords and verifying emails. You lose users.',
+        'Стандартные формы WP убивают 50% конверсии. Пользователи ненавидят создавать пароли и подтверждать email. Вы теряете клиентов.',
     },
     {
       icon: BarChart3,
-      title: 'Blind Analytics',
+      title: 'Слепая аналитика',
       description:
-        "You don't know which landing page brought the paying student. You can't optimize ROI. Your business is blind!",
+        "Вы не знаете, какой лендинг привёл платящего студента. Вы не можете оптимизировать ROI. Ваш бизнес слеп!",
     },
   ];
 
@@ -290,7 +290,7 @@ function Problem() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">The WordPress Growth Trap</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">Ловушка роста на WordPress</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 mx-auto"></div>
         </motion.div>
 
@@ -318,23 +318,23 @@ function Solution() {
   const solutions = [
     {
       icon: Zap,
-      title: 'Auto-Pilot Funnels',
+      title: 'Воронки на автопилоте',
       description:
-        'Link Landing Page A → Course A. Link Landing Page B → VIP Program. Set it once, runs forever. Now you can scale to thousands of landing pages, memberships, and courses. Your business scales automatically.',
+        'Привязать Лендинг A → Курс A. Привязать Лендинг B → VIP Программа. Настроить один раз — работает вечно. Теперь вы можете масштабироваться до тысяч лендингов, мембершипов и курсов. Ваш бизнес растёт автоматически.',
       image: 'left',
     },
     {
       icon: Lock,
-      title: 'Frictionless Entry',
+      title: 'Вход без трения',
       description:
-        'Google/Facebook Login or Magic Link. Conversion jumps from 4% to 9% instantly. You stop losing users. Users no longer feel frustrated and instantly access your site without effort. Maximum authentication security.',
+        'Вход через Google/Facebook или Magic Link. Конверсия мгновенно растёт с 4% до 9%. Вы перестаёте терять пользователей. Пользователи больше не испытывают раздражения и мгновенно попадают на ваш сайт без усилий. Максимальная безопасность аутентификации.',
       image: 'right',
     },
     {
       icon: BarChart3,
-      title: 'Data Clarity',
+      title: 'Прозрачность данных',
       description:
-        'Real-time SQL analytics via Supabase. Know exactly where every dollar comes from. You know which segments and campaigns perform best, which to scale and which to kill. Which landing pages convert your audience best. Advertising efficiency increases by 47%.',
+        'SQL-аналитика в реальном времени через Supabase. Знайте точно, откуда приходит каждый рубль. Вы знаете, какие сегменты и кампании работают лучше всего, какие масштабировать, а какие отключать. Какие лендинги лучше всего конвертируют вашу аудиторию. Эффективность рекламы растёт на 47%.',
       image: 'left',
     },
   ];
@@ -348,7 +348,7 @@ function Solution() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">The Bridge to Efficiency</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">Мост к эффективности</h2>
           <div className="w-20 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 mx-auto"></div>
         </motion.div>
 
@@ -494,8 +494,8 @@ function SocialProof() {
           <div className="absolute top-0 left-0 text-9xl text-emerald-100 font-serif">"</div>
           <blockquote className="relative bg-white/80 backdrop-blur-sm border-2 border-red-500 rounded-xl p-12 shadow-[0_20px_25px_-5px_rgba(0,0,0,0.15),0_8px_10px_-6px_rgba(0,0,0,0.15)]">
             <p className="text-xl text-gray-700 leading-relaxed mb-8">
-              I used to spend 3 hours a day manually managing access for my 5 courses. After building
-              Supabase Bridge, I manage over 50 products and saved 90 hours in the first month. Conversion grew by
+              Раньше я тратил 3 часа в день на ручное управление доступами для 5 курсов. После создания
+              Supabase Bridge я управляю более чем 50 продуктами и сэкономил 90 часов в первый месяц. Конверсия выросла на
               125%.
             </p>
             <footer className="flex items-center gap-4">
@@ -503,8 +503,8 @@ function SocialProof() {
                 <Users className="w-8 h-8 text-emerald-600" />
               </div>
               <div>
-                <div className="font-bold text-lg text-gray-900">Alexey K.</div>
-                <div className="text-gray-600">Founder of AI-Dev School</div>
+                <div className="font-bold text-lg text-gray-900">Алексей К.</div>
+                <div className="text-gray-600">Основатель AI-Dev School</div>
               </div>
             </footer>
           </blockquote>
@@ -525,10 +525,10 @@ function Statistics() {
           className="bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-xl p-8 md:p-12 text-center shadow-xl mb-12"
         >
           <p className="text-xl text-gray-700 leading-relaxed">
-            I acted as the <span className="text-emerald-600 font-semibold">Product Owner and QA</span>{' '}
-            (60% of time). AI wrote the code (Security, Database, API). Result:{' '}
+            Я выступал в роли <span className="text-emerald-600 font-semibold">Product Owner и QA</span>{' '}
+            (60% времени). AI писал код (безопасность, база данных, API). Результат:{' '}
             <span className="text-emerald-600 font-semibold">
-              Enterprise quality for the price of coffee.
+              Корпоративное качество по цене кофе.
             </span>
           </p>
         </motion.div>
@@ -539,10 +539,10 @@ function Statistics() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">The Development Reality Check</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-gray-900 to-gray-700">Проверка реальностью разработки</h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            You might think this enterprise-grade solution cost $50k and took a team of 3 months to build.{' '}
-            <span className="text-emerald-600 font-semibold">You are wrong.</span>
+            Вы могли подумать, что это корпоративное решение стоило $50k и его разрабатывала команда 3 месяца.{' '}
+            <span className="text-emerald-600 font-semibold">Вы ошибаетесь.</span>
           </p>
         </motion.div>
 
@@ -551,7 +551,7 @@ function Statistics() {
             <div className="flex flex-col items-center gap-4">
               <div className="text-center mb-4">
                 <div className="text-4xl md:text-5xl font-bold text-red-600 mb-2">$86,000</div>
-                <div className="text-xl text-gray-700">90 Days · 3 Devs + QA</div>
+                <div className="text-xl text-gray-700">90 дней · 3 Dev + QA</div>
               </div>
               <motion.div
                 initial={{ height: 0 }}
@@ -560,13 +560,13 @@ function Statistics() {
                 transition={{ duration: 1.5, ease: 'easeOut' }}
                 className="w-32 bg-red-500 rounded-t-xl shadow-lg"
               />
-              <div className="text-xl font-bold text-gray-700 mt-4">Traditional Team</div>
+              <div className="text-xl font-bold text-gray-700 mt-4">Обычная команда</div>
             </div>
 
             <div className="flex flex-col items-center gap-4">
               <div className="text-center mb-4">
                 <div className="text-4xl md:text-5xl font-bold text-emerald-600 mb-2">$300</div>
-                <div className="text-xl text-gray-700">15 Days · 1 Owner + AI</div>
+                <div className="text-xl text-gray-700">15 дней · 1 Owner + AI</div>
               </div>
               <motion.div
                 initial={{ height: 0 }}
@@ -575,7 +575,7 @@ function Statistics() {
                 transition={{ duration: 1.5, ease: 'easeOut', delay: 0.3 }}
                 className="w-32 bg-emerald-500 rounded-t-xl shadow-lg"
               />
-              <div className="text-xl font-bold text-emerald-600 mt-4">Me + AI (Claude)</div>
+              <div className="text-xl font-bold text-emerald-600 mt-4">Я + AI (Claude)</div>
             </div>
           </div>
 
@@ -598,14 +598,14 @@ function Manifesto() {
         >
           <Sparkles className="w-16 h-16 text-emerald-600 mx-auto mb-8" />
           <p className="text-3xl md:text-4xl font-bold leading-relaxed mb-6 text-gray-900">
-            I built it to solve my own problem.
+            Я создал это, чтобы решить свою проблему.
           </p>
           <div className="text-2xl md:text-3xl font-bold text-gray-700 leading-relaxed space-y-4">
-            <p>But it proves a bigger point:</p>
+            <p>Но это доказывает более важную мысль:</p>
             <p className="text-red-600 font-semibold">
-              You don't need a dev team to build complex software anymore.
+              Вам больше не нужна команда разработчиков, чтобы создавать сложное ПО.
             </p>
-            <p>You need the right mindset.</p>
+            <p>Вам нужен правильный подход.</p>
           </div>
         </motion.div>
       </div>
@@ -624,10 +624,10 @@ function DevelopmentStory() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">
-            How This Landing Page Was Built
+            Как создавался этот лендинг
           </h2>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            This landing page was built in <span className="text-emerald-600 font-semibold">3 hours</span> by a single person with AI assistance (Claude), demonstrating the power of AI-assisted development.
+            Этот лендинг был создан за <span className="text-emerald-600 font-semibold">3 часа</span> одним человеком с помощью AI (Claude), демонстрируя возможности AI-ассистированной разработки.
           </p>
         </motion.div>
 
@@ -637,39 +637,39 @@ function DevelopmentStory() {
           viewport={{ once: true }}
           className="mb-12"
         >
-          <h3 className="text-3xl font-bold text-center mb-8 text-gray-900">Cost Comparison</h3>
+          <h3 className="text-3xl font-bold text-center mb-8 text-gray-900">Сравнение стоимости</h3>
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div className="bg-white/80 backdrop-blur-sm border border-red-200/50 rounded-xl p-8 shadow-xl">
-              <h4 className="text-2xl font-bold text-red-600 mb-4">Traditional Hiring</h4>
+              <h4 className="text-2xl font-bold text-red-600 mb-4">Найм команды</h4>
               <div className="space-y-3 text-gray-700">
-                <p className="text-xl"><span className="font-semibold">Time:</span> 5-7 days</p>
-                <p className="text-xl"><span className="font-semibold">Cost:</span> $2,500 - $3,500</p>
-                <p className="text-xl"><span className="font-semibold">Team:</span> UI/UX Designer + Frontend Dev + QA</p>
+                <p className="text-xl"><span className="font-semibold">Время:</span> 5-7 дней</p>
+                <p className="text-xl"><span className="font-semibold">Стоимость:</span> $2,500 - $3,500</p>
+                <p className="text-xl"><span className="font-semibold">Команда:</span> UI/UX дизайнер + Frontend Dev + QA</p>
               </div>
             </div>
 
             <div className="bg-white/80 backdrop-blur-sm border border-orange-200/50 rounded-xl p-8 shadow-xl">
-              <h4 className="text-2xl font-bold text-orange-600 mb-4">Freelance</h4>
+              <h4 className="text-2xl font-bold text-orange-600 mb-4">Фриланс</h4>
               <div className="space-y-3 text-gray-700">
-                <p className="text-xl"><span className="font-semibold">Time:</span> 3-5 days</p>
-                <p className="text-xl"><span className="font-semibold">Cost:</span> $1,500 - $2,500</p>
-                <p className="text-xl"><span className="font-semibold">Team:</span> 1 Full-stack Developer</p>
+                <p className="text-xl"><span className="font-semibold">Время:</span> 3-5 дней</p>
+                <p className="text-xl"><span className="font-semibold">Стоимость:</span> $1,500 - $2,500</p>
+                <p className="text-xl"><span className="font-semibold">Команда:</span> 1 Full-stack разработчик</p>
               </div>
             </div>
 
             <div className="bg-gradient-to-br from-emerald-50/90 to-teal-50/90 backdrop-blur-sm border-2 border-emerald-200/50 rounded-xl p-8 shadow-2xl">
-              <h4 className="text-2xl font-bold text-emerald-600 mb-4">AI-Assisted</h4>
+              <h4 className="text-2xl font-bold text-emerald-600 mb-4">С помощью AI</h4>
               <div className="space-y-3 text-gray-700">
-                <p className="text-xl"><span className="font-semibold">Time:</span> 3 hours</p>
-                <p className="text-xl"><span className="font-semibold">Cost:</span> ~$10</p>
-                <p className="text-xl"><span className="font-semibold">Team:</span> 1 Product Owner + Claude</p>
+                <p className="text-xl"><span className="font-semibold">Время:</span> 3 часа</p>
+                <p className="text-xl"><span className="font-semibold">Стоимость:</span> ~$10</p>
+                <p className="text-xl"><span className="font-semibold">Команда:</span> 1 Product Owner + Claude</p>
               </div>
             </div>
           </div>
 
           <div className="bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-xl p-6 text-center">
             <p className="text-2xl md:text-3xl font-bold text-emerald-600">
-              Savings: 99.6% cost reduction, 40x faster delivery
+              Экономия: снижение стоимости на 99.6%, скорость выше в 40 раз
             </p>
           </div>
         </motion.div>
@@ -683,32 +683,32 @@ function DevelopmentStory() {
           >
             <h4 className="text-2xl font-bold text-emerald-600 mb-6 flex items-center gap-2">
               <CheckCircle2 className="w-8 h-8" />
-              What AI did:
+              Что сделал AI:
             </h4>
             <ul className="space-y-3 text-xl text-gray-700">
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
-                <span>Generated complete React/TypeScript codebase</span>
+                <span>Сгенерировал полную кодовую базу на React/TypeScript</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
-                <span>Implemented responsive design with Tailwind CSS</span>
+                <span>Реализовал адаптивный дизайн с Tailwind CSS</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
-                <span>Created smooth animations with Framer Motion</span>
+                <span>Создал плавные анимации с Framer Motion</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
-                <span>Performed comprehensive security audit</span>
+                <span>Провел комплексный аудит безопасности</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
-                <span>Fixed all vulnerabilities and optimized performance</span>
+                <span>Исправил все уязвимости и оптимизировал производительность</span>
               </li>
               <li className="flex items-start gap-3">
                 <CheckCircle2 className="w-6 h-6 text-emerald-600 flex-shrink-0 mt-1" />
-                <span>Generated professional documentation</span>
+                <span>Сгенерировал профессиональную документацию</span>
               </li>
             </ul>
           </motion.div>
@@ -721,24 +721,24 @@ function DevelopmentStory() {
           >
             <h4 className="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
               <Users className="w-8 h-8 text-gray-700" />
-              What the human did:
+              Что сделал человек:
             </h4>
             <ul className="space-y-3 text-xl text-gray-700">
               <li className="flex items-start gap-3">
                 <span className="text-2xl flex-shrink-0">🎯</span>
-                <span>Defined requirements and user experience</span>
+                <span>Определил требования и пользовательский опыт</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-2xl flex-shrink-0">🎨</span>
-                <span>Approved design decisions</span>
+                <span>Утвердил дизайнерские решения</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-2xl flex-shrink-0">🔍</span>
-                <span>Reviewed and validated output</span>
+                <span>Проверил и валидировал результат</span>
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-2xl flex-shrink-0">✅</span>
-                <span>Tested final result</span>
+                <span>Протестировал финальный результат</span>
               </li>
             </ul>
           </motion.div>
@@ -751,8 +751,8 @@ function DevelopmentStory() {
           className="bg-white/90 backdrop-blur-sm border-2 border-emerald-200/50 rounded-2xl p-10 text-center shadow-2xl"
         >
           <p className="text-2xl md:text-3xl font-bold text-gray-900 leading-relaxed">
-            This proves you don't need a development team or expensive freelancers to build professional web projects anymore.{' '}
-            <span className="text-emerald-600">You need the right mindset and AI tools.</span>
+            Это доказывает, что вам больше не нужна команда разработчиков или дорогие фрилансеры для создания профессиональных веб-проектов.{' '}
+            <span className="text-emerald-600">Вам нужен правильный подход и AI-инструменты.</span>
           </p>
         </motion.div>
       </div>
@@ -772,10 +772,10 @@ function DualCTA() {
             className="bg-white/80 backdrop-blur-sm border border-emerald-100/50 rounded-2xl p-10 shadow-xl"
           >
             <Download className="w-12 h-12 text-gray-700 mb-6" />
-            <h3 className="text-3xl font-bold mb-4 text-gray-900">Just Need the Tool?</h3>
-            <h4 className="text-2xl font-semibold text-emerald-600 mb-6">Get Supabase Bridge</h4>
+            <h3 className="text-3xl font-bold mb-4 text-gray-900">Нужен только инструмент?</h3>
+            <h4 className="text-2xl font-semibold text-emerald-600 mb-6">Получите Supabase Bridge</h4>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Free, Open Source (MIT License). Perfect for school owners who want to fix their funnels today.
+              Бесплатно, Open Source (MIT License). Идеально для владельцев школ, которые хотят исправить свои воронки уже сегодня.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -783,7 +783,7 @@ function DualCTA() {
               className="w-full bg-white/80 backdrop-blur-sm hover:bg-emerald-50/80 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center justify-center gap-2 border-2 border-emerald-300 shadow-lg"
             >
               <Download className="w-5 h-5" />
-              Download Plugin
+              Скачать плагин
             </motion.button>
           </motion.div>
 
@@ -796,13 +796,13 @@ function DualCTA() {
             className="bg-gradient-to-br from-emerald-50/90 to-teal-50/90 backdrop-blur-sm border border-emerald-200/50 rounded-2xl p-10 shadow-xl"
           >
             <Sparkles className="w-12 h-12 text-emerald-600 mb-6" />
-            <h3 className="text-3xl font-bold mb-4 text-gray-900">Want the Superpower?</h3>
+            <h3 className="text-3xl font-bold mb-4 text-gray-900">Хотите получить суперсилу?</h3>
             <h4 className="text-2xl font-semibold text-emerald-600 mb-6">
-              Course: AI-Assisted Development
+              Курс: AI-ассистированная разработка
             </h4>
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
-              Learn how I built this from scratch in 15 days without writing code manually. Stop depending on
-              SaaS limits. Build your own assets.
+              Узнайте, как я создал это с нуля за 15 дней, не написав код вручную. Перестаньте зависеть от
+              ограничений SaaS. Создавайте свои собственные активы.
             </p>
             <div className="space-y-3">
               <motion.button
@@ -811,7 +811,7 @@ function DualCTA() {
                 className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center justify-center gap-2 shadow-lg"
               >
                 <ArrowRight className="w-5 h-5" />
-                Start Free Trial
+                Начать бесплатный пробный период
               </motion.button>
               <motion.button
                 whileHover={{ scale: 1.05 }}
@@ -819,7 +819,7 @@ function DualCTA() {
                 className="w-full bg-white/80 backdrop-blur-sm border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-50/80 px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center justify-center gap-2 shadow-lg"
               >
                 <BookOpen className="w-5 h-5" />
-                View Curriculum
+                Просмотреть программу
               </motion.button>
             </div>
           </motion.div>
@@ -856,19 +856,19 @@ function Footer() {
               className="text-gray-700 hover:text-emerald-600 transition-colors flex items-center gap-2"
             >
               <BookOpen className="w-5 h-5" />
-              Documentation
+              Документация
             </a>
             <a
               href="#master"
               className="text-gray-700 hover:text-emerald-600 transition-colors flex items-center gap-2"
             >
               <Sparkles className="w-5 h-5" />
-              Course
+              Курс
             </a>
           </div>
 
           <div className="text-gray-700">
-            Built with <span className="text-emerald-600 font-semibold">Vibe Coding</span>
+            Создано с <span className="text-emerald-600 font-semibold">Vibe Coding</span>
           </div>
         </div>
       </div>
