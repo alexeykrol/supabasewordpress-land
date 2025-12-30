@@ -834,24 +834,14 @@ function DualCTA() {
               Узнайте, как я создал это с нуля за 15 дней, не написав код вручную. Перестаньте зависеть от
               ограничений SaaS. Создавайте свои собственные активы.
             </p>
-            <div className="space-y-3">
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center justify-center gap-2 shadow-lg"
-              >
-                <ArrowRight className="w-5 h-5" />
-                Начать бесплатный пробный период
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="w-full bg-white/80 backdrop-blur-sm border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-50/80 px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center justify-center gap-2 shadow-lg"
-              >
-                <BookOpen className="w-5 h-5" />
-                Просмотреть программу
-              </motion.button>
-            </div>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="w-full bg-white/80 backdrop-blur-sm border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-50/80 px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center justify-center gap-2 shadow-lg"
+            >
+              <BookOpen className="w-5 h-5" />
+              Посмотреть программу
+            </motion.button>
           </motion.div>
         </div>
       </div>
