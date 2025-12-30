@@ -75,15 +75,17 @@ function Navigation() {
             <div className="hidden md:flex items-center gap-2 bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-lg p-1">
               <button
                 onClick={() => switchLanguage('en')}
-                className="px-3 py-1 rounded bg-emerald-600 text-white font-medium text-sm transition-all"
+                className="px-3 py-1.5 rounded bg-emerald-600 text-white font-medium text-lg transition-all"
+                aria-label="Switch to English"
               >
-                EN
+                🇺🇸
               </button>
               <button
                 onClick={() => switchLanguage('ru')}
-                className="px-3 py-1 rounded text-gray-700 hover:bg-white/80 font-medium text-sm transition-all"
+                className="px-3 py-1.5 rounded text-gray-700 hover:bg-white/80 font-medium text-lg transition-all"
+                aria-label="Switch to Russian"
               >
-                RU
+                🇷🇺
               </button>
             </div>
 
@@ -118,15 +120,17 @@ function Navigation() {
             <div className="flex items-center gap-2 bg-emerald-50/80 backdrop-blur-sm border border-emerald-200/50 rounded-lg p-1 mb-3">
               <button
                 onClick={() => switchLanguage('en')}
-                className="flex-1 px-3 py-2 rounded bg-emerald-600 text-white font-medium text-sm transition-all"
+                className="flex-1 px-3 py-2 rounded bg-emerald-600 text-white font-medium text-xl transition-all"
+                aria-label="Switch to English"
               >
-                EN
+                🇺🇸
               </button>
               <button
                 onClick={() => switchLanguage('ru')}
-                className="flex-1 px-3 py-2 rounded text-gray-700 hover:bg-white/80 font-medium text-sm transition-all"
+                className="flex-1 px-3 py-2 rounded text-gray-700 hover:bg-white/80 font-medium text-xl transition-all"
+                aria-label="Switch to Russian"
               >
-                RU
+                🇷🇺
               </button>
             </div>
             <a
