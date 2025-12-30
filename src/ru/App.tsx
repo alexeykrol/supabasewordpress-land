@@ -297,7 +297,7 @@ function Problem() {
               Никакого внятного маркетинга.
             </span>
             <span className="block font-bold text-red-600">
-              Это блог, а не машина продаж.
+              Вы получаете блог, а не машину продаж.
             </span>
           </h2>
           <div className="w-20 h-1 bg-gradient-to-r from-emerald-600 to-teal-600 mx-auto"></div>
