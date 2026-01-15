@@ -831,7 +831,7 @@ function Footer() {
             href="https://github.com/alexeykrol/supabasewordpress-land"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-700 hover:text-emerald-600 transition-colors flex items-center gap-2"
+            className="text-emerald-600 font-semibold hover:text-emerald-700 transition-colors underline flex items-center gap-2"
           >
             <Github className="w-4 h-4" />
             GitHub / Documentation
