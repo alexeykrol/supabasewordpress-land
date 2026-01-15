@@ -90,7 +90,7 @@ function Navigation() {
             </div>
 
             <motion.a
-              href="#download"
+              href="https://github.com/AI-agents-incubator/supabase-wordpress"
               initial={{ opacity: 0, x: 20 }}
               animate={{ opacity: 1, x: 0 }}
               className="hidden md:block bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-6 py-2 rounded-lg font-medium transition-all shadow-lg whitespace-nowrap"
@@ -162,7 +162,7 @@ function Navigation() {
               Обучение
             </a>
             <a
-              href="#download"
+              href="https://github.com/AI-agents-incubator/supabase-wordpress"
               onClick={() => setIsOpen(false)}
               className="block bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-6 py-3 rounded-lg font-medium transition-all shadow-lg text-center"
             >
@@ -199,22 +199,13 @@ function Hero() {
             </p>
             <div className="flex flex-wrap gap-4">
               <motion.a
-                href="#download"
+                href="https://github.com/AI-agents-incubator/supabase-wordpress"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-700 hover:to-teal-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center gap-2 shadow-lg"
               >
                 <Download className="w-5 h-5" />
                 Скачать бесплатно
-              </motion.a>
-              <motion.a
-                href="#master"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="bg-white/80 backdrop-blur-sm border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-50/80 px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center gap-2 shadow-lg"
-              >
-                <Sparkles className="w-5 h-5" />
-                Узнать больше
               </motion.a>
             </div>
           </motion.div>
@@ -807,14 +798,15 @@ function DualCTA() {
             <p className="text-xl text-gray-700 mb-8 leading-relaxed">
               Идеально для владельцев школ, которые хотят исправить свои воронки уже сегодня и начать зарабатывать, а не мучаться с WordPress. Бесплатно, Open Source (MIT License).
             </p>
-            <motion.button
+            <motion.a
+              href="https://github.com/AI-agents-incubator/supabase-wordpress"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="w-full bg-white/80 backdrop-blur-sm hover:bg-emerald-50/80 text-gray-900 px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center justify-center gap-2 border-2 border-emerald-300 shadow-lg"
             >
               <Download className="w-5 h-5" />
               Скачать бесплатно
-            </motion.button>
+            </motion.a>
           </motion.div>
 
           <motion.div
@@ -834,14 +826,17 @@ function DualCTA() {
               Научитесь создавать автоматизации, полноценные приложения и мощных ИИ агентов. Перестаньте зависеть от
               ограничений убогих конструкторов.
             </p>
-            <motion.button
+            <motion.a
+              href="https://alexeykrol.com/courses/ai_full/"
+              target="_blank"
+              rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="w-full bg-white/80 backdrop-blur-sm border-2 border-emerald-600 text-emerald-700 hover:bg-emerald-50/80 px-8 py-4 rounded-lg font-semibold text-lg transition-all flex items-center justify-center gap-2 shadow-lg"
             >
               <BookOpen className="w-5 h-5" />
               Посмотреть программу
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
       </div>
@@ -853,42 +848,28 @@ function Footer() {
   return (
     <footer className="py-12 px-4 sm:px-6 lg:px-8 bg-white/60 backdrop-blur-sm border-t border-emerald-100/50">
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="flex flex-row items-center justify-center gap-6 text-sm flex-wrap">
           <div className="flex items-center gap-2">
-            <Database className="w-8 h-8 text-emerald-600" />
-            <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">Supabase WordPress Bridge</span>
+            <Database className="w-5 h-5 text-emerald-600" />
+            <span className="font-semibold bg-clip-text text-transparent bg-gradient-to-r from-emerald-900 to-teal-700">Supabase WordPress Bridge</span>
           </div>
 
-          <div className="flex items-center gap-8">
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 hover:text-emerald-600 transition-colors flex items-center gap-2"
-            >
-              <Github className="w-5 h-5" />
-              GitHub
-            </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-700 hover:text-emerald-600 transition-colors flex items-center gap-2"
-            >
-              <BookOpen className="w-5 h-5" />
-              Документация
-            </a>
-            <a
-              href="#master"
-              className="text-gray-700 hover:text-emerald-600 transition-colors flex items-center gap-2"
-            >
-              <Sparkles className="w-5 h-5" />
-              Курс
-            </a>
-          </div>
+          <a href="https://alexeykrol.com/" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-semibold hover:text-emerald-700 transition-colors underline">
+            © Alex Krol, 2026
+          </a>
+
+          <a
+            href="https://github.com/AI-agents-incubator/supabase-wordpress"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-700 hover:text-emerald-600 transition-colors flex items-center gap-2"
+          >
+            <Github className="w-4 h-4" />
+            GitHub / Документация
+          </a>
 
           <div className="text-gray-700">
-            Создано с <span className="text-emerald-600 font-semibold">Vibe Coding</span>
+            Создано с <a href="https://alexeykrol.com/claudecodefree/" target="_blank" rel="noopener noreferrer" className="text-emerald-600 font-semibold hover:text-emerald-700 transition-colors underline">Vibe Coding</a>
           </div>
         </div>
       </div>
