@@ -828,7 +828,7 @@ function Footer() {
           </a>
 
           <a
-            href="https://github.com/AI-agents-incubator/supabase-wordpress"
+            href="https://github.com/alexeykrol/supabasewordpress-land"
             target="_blank"
             rel="noopener noreferrer"
             className="text-gray-700 hover:text-emerald-600 transition-colors flex items-center gap-2"
