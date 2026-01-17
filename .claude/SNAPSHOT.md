@@ -1,6 +1,6 @@
 # SNAPSHOT — Supabase Bridge Landing Page
 
-*Framework: Claude Code Starter v2.2*
+*Framework: Claude Code Starter v2.5.0*
 *Last Updated: 2026-01-17*
 
 ---
@@ -46,6 +46,8 @@ Bilingual (Russian + English) marketing landing page for **Supabase Bridge** - a
 
 ## 🚀 Recent Achievements
 
+- ✅ Updated framework from v2.2 to v2.5.0
+- ✅ Enabled anonymous bug reporting for framework improvements
 - ✅ Completed visual polish (GitHub link styling, footer improvements)
 - ✅ Added deployment configurations (Vercel/Netlify)
 - ✅ Optimized CTA section spacing and content
